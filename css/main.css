@@ -1,0 +1,47 @@
+body {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+header, nav, main, footer {
+    margin: 1.25rem auto;
+    max-width: 760px;
+}
+
+header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+img {
+    float: right;
+    margin: 0px;
+    width: 10rem;
+    border-radius: 7px;
+}
+
+h2 {
+    display: block;
+    border-bottom: 2px solid grey;
+    padding-bottom: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+footer a {
+    color: white;
+}
+
+footer p {
+    color: rgb(112, 209, 112);
+}
