@@ -12,8 +12,7 @@ header {
     background-color: navy;
     color: white;
     text-align: center;
-    padding: 1rem;
-    border-radius: 1rem;
+    border-radius: .5rem;
 }
 
 img {
@@ -23,9 +22,13 @@ img {
     border-radius: 7px;
 }
 
+h1 {
+    padding: 10px;
+}
+
 h2 {
     display: block;
-    border-bottom: 2px solid grey;
+    border-bottom: 1.3px solid grey;
     padding-bottom: 5px;
     font-size: 1.5em;
     font-weight: bold;
@@ -33,15 +36,17 @@ h2 {
 
 footer {
     background-color: navy;
+    padding-top: 5px;
+    padding-bottom: 5px;
     color: white;
     text-align: center;
-    border-radius: 1rem;
+    border-radius: .5rem;
 }
 
 footer a {
     color: white;
 }
 
-footer p {
+footer div {
     color: rgb(112, 209, 112);
 }
