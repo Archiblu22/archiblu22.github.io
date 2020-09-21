@@ -12,14 +12,11 @@ header {
     background-color: navy;
     color: white;
     text-align: center;
-    border-radius: .5rem;
 }
 
-img {
-    float: right;
-    margin: 0px;
+header img {
     width: 10rem;
-    border-radius: 7px;
+    height: auto;
 }
 
 h1 {
@@ -40,7 +37,6 @@ footer {
     padding-bottom: 5px;
     color: white;
     text-align: center;
-    border-radius: .5rem;
 }
 
 footer a {
@@ -50,3 +46,5 @@ footer a {
 footer div {
     color: rgb(112, 209, 112);
 }
+
+h1, h2, h3 {font-family: 'Lobster', cursive;}
