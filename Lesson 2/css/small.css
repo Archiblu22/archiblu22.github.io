@@ -1,0 +1,46 @@
+main {
+    max-width: 767px;
+    margin: 0 auto;
+    display: grid;
+}
+
+header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    padding: 10px;
+}
+
+h2 {
+    display: block;
+    border-bottom: 1.3px solid grey;
+    padding-bottom: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h3 {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    border-radius: 7px 7px 0 0;
+}
+
+footer {
+    background-color: navy;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Lobster', cursive;
+}
+
+p, div, a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
