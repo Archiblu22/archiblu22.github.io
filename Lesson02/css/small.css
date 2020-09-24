@@ -21,15 +21,16 @@ h1 {
     padding: 10px;
 }
 
-h2 {
+h3 {
     display: block;
     border-bottom: 1.3px solid grey;
     padding-bottom: 5px;
     font-size: 1.5em;
     font-weight: bold;
+    text-align: center;
 }
 
-h3 {
+h2 {
     background-color: navy;
     color: white;
     text-align: center;
