@@ -1,0 +1,100 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+header,nav ul li,main {
+	margin: 0 auto;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+}
+
+nav {
+    background-color: #89b0ae;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #89b0ae;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: .75rem;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #bee3db;
+}
+
+nav ul li.active a {
+    background-color: #bee3db;
+    color: white;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contentbox {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed black;
+    padding: 15px;
+    background-color: #eee;
+    color: #444;
+    font-style: italic;
+}
+
+footer {
+	background-color: #89b0ae;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+header, main {
+    max-width: 90%;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #005b97;
+    font-size: 30px;
+    text-align: center;
+}
+
+img {
+    display: flex;
+}
