@@ -1,4 +1,3 @@
-/* 64em is also 1028px when basefont is 16px */
 @media only screen and (min-width: 64rem) {
     
     header,nav ul,main {
@@ -21,14 +20,8 @@
         float: left;
         flex: 1 1 100%;
     }
-
-    nav ul li a {
-        border: none;
-        padding: .6rem 1rem;
-    }
     
     h2 {
         text-align: left;
     }
-    
-} /*end large */
+}
