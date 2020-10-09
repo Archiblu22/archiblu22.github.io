@@ -1,13 +1,10 @@
 function toggleMenu () {
     document.getElementById("primaryNav").classList.toggle("hide");
 }
-const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-	now
-);
-// long, medium, short
-const datefield = document.querySelector("date");
 
-datefield.textContent = fulldate;
-
-document.getElementById("lastmodified").innerHTML = document.lastModified
+try {
+    const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
+    document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options);
+  } catch (e) {
+    alert('Error with code or your browser does not support Locale');
+  }

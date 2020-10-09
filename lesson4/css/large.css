@@ -1,27 +1,40 @@
-@media only screen and (min-width: 64rem) {
-    
-    header,nav ul,main {
-        max-width: 80%;
-    }
-    
+@media only screen and (min-width: 60em) {
+   
     nav button {
         display: none;
     }
-
+        
     nav ul.hide {
         display: block;
     }
-
+        
     nav ul {
-        margin-left: 2%;
+        text-align: center;
+    }
+        
+    nav ul li{
+        display:inline;
+   }
+        
+    nav ul li a {
+        border: none;
+        padding: .6rem 1rem;
+        display: inline-block;
     }
 
-    nav ul li {
-        float: left;
-        flex: 1 1 100%;
+    br.responsive {
+        display: none;
     }
-    
+
+    .heading {
+        font-size: 100%;
+    }
+
+    header img {
+        width: 100%;
+    }
+
     h2 {
-        text-align: left;
+        font-size: 50px;
     }
 }
