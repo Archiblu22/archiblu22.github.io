@@ -12,7 +12,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #89b0ae;
+    background-color: #555b6e;
     font-family: 'Cormorant Garamond', serif;
     font-size: 25px;
 }
@@ -74,7 +74,7 @@ img {
 }
 
 footer {
-	background-color: #89b0ae;
+	background-color: #555b6e;
     font-family: 'Cormorant Garamond', serif;
     font-size: 25px;
     color: white;
@@ -83,5 +83,5 @@ footer {
 }
 
 main {
-    padding-bottom: 10px;
+    padding: 1rem;
 }
