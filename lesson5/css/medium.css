@@ -1,25 +1,129 @@
-/* 35em is also 560px when basefont is 16px */
-@media only screen and (min-width: 35em) {
-    #hero_box img {
-        margin-bottom: 0;
+@media only screen and (min-width: 960px) {
+    header img {
+        margin: 0 10px;
     }
 
-    #weather_summary {
+    h1 {
+        font-size: 30px;
+    }
+
+    header button {
+        display: none;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul.hide {
+        display: flex;
+        flex-direction: row;
+        margin-left: 3%;
+    }
+
+    nav ul li a {
+        display: list-item;
+        padding: 1rem 1.3rem;
+        font-size: 20px;
+    }
+
+    nav ul li a:hover {
+        background-color: #89b0ae;
+        color: #fff;
+    }
+
+    .summary {
         position: absolute;
-        background-color: rgba(67, 112, 124, 0.85);
-        box-shadow: 0px 0px 25px #444444;
-        border: none;
+        top: 1.5rem;
+        left: 2rem;
+        padding: 1rem;
+        padding-right: 3rem;
+        white-space: nowrap;
+        width: 13rem;
+        color: #fff;
+        background-color: rgba(85, 91, 110, 0.8);
+        border-radius: 3px;
     }
 
-    #ws {
-        padding-left: 3em;
-        padding-right: 3em;
-        padding-top: .5em;
+    .summary h1 {
+        margin: 0;
+        font-size: 25px;
     }
 
-    table {
-        width: 90%;
-    }   
-    
+    .summary {
+        display: block;
+    }
 
-} /*end medium */
+    .secondHalf {
+        padding-top: 0px;
+        padding-right: 12px;
+    }
+
+    .topImg {
+        display: block;
+        float: right;
+        margin: 0;
+        max-width: 100%;
+        height: 300px;
+        margin: 0 0 1rem 1rem;
+    }
+
+    .secondParagraph {
+        display: block;
+    }
+
+    .bottomImg {
+        display: none;
+    }
+
+    .contactInfoLarge {
+        display: block;
+        background-color: #ece9e9;
+        margin-top: 1.5rem;
+        padding: 3rem 1rem;
+    }
+
+    .subContactLayer {
+        display: flex;
+    }
+
+    .largeCityMap {
+        display: block;
+        text-align: left;
+        max-width: 100%;
+        padding-right: 1rem;
+        height: 200px;
+        width: 400px;
+    }
+
+    .infoLarge {
+        display: flex;
+        font-size: 18px;
+    }
+
+    .contactInfoIcon {
+        padding: 1rem;
+    }
+
+    .SubInfo {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    .socialMedia {
+        padding-top: .4rem; 
+    }
+
+    .socialMedia img {
+        padding: .5rem;
+    }
+
+    .contactInfo {
+        display: none;
+    }
+
+    .SubInfo h3 {
+        margin-bottom: .5em;
+    }
+}
