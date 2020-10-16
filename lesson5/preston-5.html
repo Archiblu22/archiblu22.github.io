@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="Preston Page Assignment" content="Assignment to work out how the weather is">
+<title>The Weather Site</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/small.css" rel="stylesheet">
+<link href="css/medium.css" rel="stylesheet">
+<link href="css/large.css" rel="stylesheet">   
+</head>
+<body>
+    <div class="message">
+        <p id="message-text">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+	<header>
+        <picture>
+        <img src="images/outvibe-logo.png" alt="weather logo">
+        </picture>                
+        <section class ="heading">
+            <h1>The Weather Site</h1>
+            <div class="motto">Where the weather is better</div>
+        </section>
+
+    </header>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li> 
+            <li><a href="#">Gallery</a></li>    
+        </ul>
+    </nav>
+    <main>
+        <div id="town_box">
+            <h2 class="main" id="town">Preston, Idaho</h2>
+        </div>
+        <div id="hero_box">
+            <img src="images/preston-idaho.jpg" alt="red house among other houses near lake">
+            <section id="weather_summary">
+                <h3 class="main" id="ws">Weather Summary</h3>
+                <table>
+                    <tbody id="ws_table">
+                        <tr>
+                            <td class="">Currently:</td>
+                            <td class="">Sunny</td>
+                        </tr>
+                        <tr>
+                            <td class="">High:</td>
+                            <td class="">76 °F</td>
+                        </tr>
+                        <tr>
+                            <td class="">Wind Chill:</td>
+                            <td class="">°F</td>
+                        </tr>
+                        <tr>
+                            <td class="">Humidity:</td>
+                            <td class="">69%</td>
+                        </tr>
+                        <tr>
+                            <td class="">Wind Speed:</td>
+                            <td class="">5 mph</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <h3 class="forecast_head">Five Day Forecast</h3>
+        <div id="forecast_box">
+            <div class="forecast">
+                <span class="forecast_day">Wed</span>
+                <img class="forecast_icon" src="images/sunny.png" alt="sun icon">
+                <span class= "forecast_temp">89°F</span>
+            </div>
+            <div class="forecast">
+                <span class="forecast_day">Thu</span>
+                <img class="forecast_icon" src="images/cloudy.png" alt="sun with cloud icon">
+                <span class= "forecast_temp">87°F</span>
+            </div>
+            <div class="forecast">
+                <span class="forecast_day">Fri</span>
+                <img class="forecast_icon" src="images/sunny.png" alt="sun icon">
+                <span class= "forecast_temp">78°F</span>
+            </div>
+            <div class="forecast">
+                <span class="forecast_day">Sat</span>
+                <img class="forecast_icon" src="images/sunny.png" alt="sun icon">
+                <span class= "forecast_temp">75°F</span>
+            </div>
+            <div class="forecast">
+                <span class="forecast_day">Sun</span>
+                <img class="forecast_icon" src="images/cloudy.png" alt="sun iwth cloud icon">
+                <span class= "forecast_temp">72°F</span>
+            </div>
+        </div>
+        <div class="contentbox">Article</div>
+        <div class="contentbox">Contact Information</div>
+    </main>
+    <footer>
+        &copy; The Weather Site</span> | Attributions | Pierre Aguirre
+        <br>
+        <span id="currentdate"></span>
+      </footer>
+      <script src ="'js/lastmodified.js'"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+nav button {
+    margin: .5em auto;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+}
+
+nav {
+    background-color: #89b0ae;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #89b0ae;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: .8rem 2%;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #bee3db;
+}
+
+nav ul li.active a {
+    background-color: #bee3db;
+    color: white;
+    text-decoration: underline;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+main {
+    padding: 1em;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #89b0ae;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+header {
+    display: flex;    
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+
+header img {
+    width: 75%;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    font-size: .7em;
+}
+
+.heading h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 45px;
+    color: #444;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #005b97;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contentbox {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed black;
+    padding: 15px;
+    background-color: #eee;
+    color: #444;
+    font-style: italic;
+}
+
+.motto {
+    color: #444;
+    letter-spacing: 1pt;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+#hero_box {
+    position: relative;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+#hero_box img {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+#weather_summary {
+    background-color: #43707c;
+    top: 25px;
+    left: 25px;
+    border-top: 1px solid #444444;
+    border-bottom: 1px solid #444444;
+}
+
+#ws {
+    padding-top: .5em;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+table {
+    width: 80%;
+    border: 1em;
+    padding-bottom: 1em;
+}
+
+table tr td {
+    height: 1.5em;
+    color: #ffffff;
+}
+
+td {
+    text-align: left;
+}
+
+td:first-child {
+    text-align: right;
+    font-weight: bold;
+}
+
+#town_box {
+    border-bottom: 1px solid #444444;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+#town {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: .96em;
+    padding-bottom: .96em;
+}
+
+.forecast_head {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+#forecast_box {
+    display: flex;
+    flex-flow: wrap;
+    border-right: 1px solid #444444;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.forecast {
+    flex: 1 1 auto;
+    color: #ffffff;
+    background-color: #43707c;
+    border-bottom: 1px solid #444444;
+    text-align: center;
+    border-left: 1px solid #444444;
+}
+
+.forecast_day {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+    background-color: #89b0ae;
+    border-top: 1px solid #444444;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.forecast_icon {
+    border-radius: 100px;
+    padding: .25rem;
+    max-width: 10vw;
+    height: auto;
+}
+
+.forecast_temp {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 0 5px 5px;
+    font-size: 1rem;
+}
+

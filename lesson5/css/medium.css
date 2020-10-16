@@ -1,0 +1,25 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35em) {
+    #hero_box img {
+        margin-bottom: 0;
+    }
+
+    #weather_summary {
+        position: absolute;
+        background-color: rgba(67, 112, 124, 0.85);
+        box-shadow: 0px 0px 25px #444444;
+        border: none;
+    }
+
+    #ws {
+        padding-left: 3em;
+        padding-right: 3em;
+        padding-top: .5em;
+    }
+
+    table {
+        width: 90%;
+    }   
+    
+
+} /*end medium */
