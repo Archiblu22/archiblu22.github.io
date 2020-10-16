@@ -13,7 +13,7 @@ nav button {
 }
 
 nav {
-    background-color: #89b0ae;
+    background-color: #555b6e;
     font-size: 20px;
     line-height: 35px;
 }
@@ -23,7 +23,7 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #89b0ae;
+    background-color: #555b6e;
     font-family: 'Cormorant Garamond', serif;
     font-size: 25px;
 }
@@ -37,11 +37,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #bee3db;
+    background-color: #89b0ae;
 }
 
 nav ul li.active a {
-    background-color: #bee3db;
+    background-color: #89b0ae;
     color: white;
 }
 
@@ -68,7 +68,7 @@ main {
 }
 
 footer {
-    background-color: #89b0ae;
+    background-color: #555b6e;
     font-family: 'Cormorant Garamond', serif;
     font-size: 25px;
     color: white;
