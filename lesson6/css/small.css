@@ -1,0 +1,260 @@
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+p, h6, h5, h4, h3, h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ece9e9;
+    line-height: 10px;
+    color: black;
+    padding: 12px;
+}
+
+
+header div {
+    display: flex;
+}
+
+header div div {
+    display: block;
+    margin-left: 10px;
+}
+
+header button {
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: 1.6rem;
+}
+
+
+header img {
+    height: 70px;
+    margin: 0 5px;
+    border: 1px black solid;
+    border-radius: 100%;
+}
+
+header h1 {
+    font-size: 35px;
+}
+
+#message {
+    display: none;
+    text-align: center;
+    background-color: #ffd6ba;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: .4rem .3rem;
+}
+
+nav {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #555b6e;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 15px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+}
+
+nav ul li a.selected {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+nav a:hover {
+    background-color: #89b0ae;
+    color: #fff;
+}
+
+.hide {
+    display: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-sections {
+    background-color: #ece9e9;
+    padding: 25px;
+}
+
+main {
+    margin: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+footer {
+    background-color: #555b6e;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 25px;
+}
+
+main .hero-img img {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.hero-img {
+    position: relative;
+}
+
+.summary {
+    display: flex;
+    justify-content: center;
+    background-color: #555b6e;
+    padding: 10px 12px;
+}
+
+.summary h1 {
+    color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    text-decoration: underline;
+}
+
+.summary p {
+    color: #fff;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+}
+
+.weatherValue {
+    color: yellow;
+    text-align: left;
+    font-weight: bold;
+}
+
+.secondHalf {
+    padding-top: 55px;
+    padding-right: 12px;
+}
+
+.fiveDayForecast {
+    display: flex;
+    justify-content: center;
+    padding: 1rem .5rem;
+}
+
+.fiveDayForecast div {
+    padding: 0 4.5%;
+    background-color: #89b0ae;
+}
+
+.fiveDayForecast div p {
+    font-family: 'Cormorant Garamond', serif;
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.fiveDayForecast div h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+
+.fiveDayForecast div img {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.forecast {
+    border: .5px solid lightgray;
+    margin: 1.5rem 0;
+    padding-bottom: 0;
+    background-color: #ffd6ba;
+}
+
+.forecast h1 {
+    text-align: left;
+    color: #555b6e;
+    padding: 1.5rem 1rem;
+    margin-top: 0;
+}
+
+.forecastArticle {
+    padding: 0 1rem;
+    margin-top: 0;
+}
+
+.topImg {
+    display: none;
+}
+
+.bottomImg {
+    max-width: 100%;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+.forecast p {
+    line-height: 1.5rem;
+}
+
+.secondParagraph p {
+    text-indent: 1rem;
+}
+
+.forecastArticle p {
+    text-indent: 1rem;
+}
+
+.contactInfo {
+    background-color: #ece9e9;
+    margin-top: 1.5rem;
+    padding: 2rem 1rem;
+    line-height: .5rem;
+}
+
+.info {
+    display: flex;
+}
+
+.info img {
+    padding: 1rem;
+}
+
+.smallCityMap {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    padding-top: 1rem;
+}
+
+.contactInfoLarge {
+    display: none;
+}
