@@ -15,10 +15,14 @@
         margin: 0;
     }
 
-    nav ul.hide {
+    nav ul {
         display: flex;
         flex-direction: row;
         margin-left: 3%;
+    }
+
+    .hide {
+        display: flex;
     }
 
     nav ul li a {
