@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="Preston Page Assignment" content="Assignment to work out how the weather is">
+<title>The Weather Site</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/small.css" rel="stylesheet">
+<link href="css/medium.css" rel="stylesheet">
+<link href="css/large.css" rel="stylesheet">
+<script src="/lesson7/js/lazyload.js" defer></script> 
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="/index.html"><img src="/lesson6/images/outvibe-logo.png"
+                    alt="outvibe-logo" title="Outvibe logo"></a>
+            <div>
+                <h1>Outvibe</h1>
+                <p>Vibing whatever the weather</p>
+            </div>
+        </div>
+        <button onclick="toggleMenu()">&#9776;</button>
+    </header>
+
+    <div id="message">
+        <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+
+    <nav class="clearfix">
+        <ul id="primaryNav" class="hide">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="/lesson8/stormcenter.html" class="selected">Storm Center</a></li>
+            <li><a href="/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+    </main>
+    <footer>
+        <p> &#169; Outvibe | Attributes | Pierre Aguirre |
+            Current Date: <span id="currentdate"></span></p>
+        <script src="/lesson6/js/lastmodified.js"></script>
+    </footer>
+    </body>
+    </html>
