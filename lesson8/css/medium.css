@@ -36,28 +36,8 @@
         color: #fff;
     }
 
-    .images {
-        display: grid;
-        grid-gap: 11px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: 19.5%;
-        margin-bottom: 1rem;
+    form label.top input, form label.top select {
+        width: 96%;
     }
 
-    .lazy-card {
-        height: 400px;
-    }
-
-    .lazyimage {
-        height: 350px;
-    }
-
-    .title {
-        font-size: 22px;
-        margin: .6rem 0 .5rem 1rem;
-    }
-   
-    .image9 {
-    grid-column: 1/3;
-    }
 }
