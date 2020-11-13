@@ -1,0 +1,43 @@
+@media only screen and (min-width: 960px) {
+    header img {
+        margin: 0 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    header button {
+        display: none;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        margin-left: 3%;
+    }
+
+    .hide {
+        display: flex;
+    }
+
+    nav ul li a {
+        display: list-item;
+        padding: 1rem 1.3rem;
+        font-size: 20px;
+    }
+
+    nav ul li a:hover {
+        background-color: #89b0ae;
+        color: #fff;
+    }
+
+    .home-content-wrap {
+        grid-column: 1/3;
+      }
+
+}
