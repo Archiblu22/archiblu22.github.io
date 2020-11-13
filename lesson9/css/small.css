@@ -177,3 +177,27 @@ article p {
     margin-left: 1rem;
     margin-bottom: 1rem;
 }
+
+.contactInfo {
+    text-align: center;
+    background-color: #dadada;
+    margin-top: 1.5rem;
+    padding: 2rem 1rem;
+    line-height: .5rem;
+}
+
+.info {
+    display: flex;
+}
+
+.info img {
+    padding: .2rem .5rem;
+}
+
+.smallCityMap {
+    display: none;
+}
+
+.contactInfoLarge {
+    display: none;
+}

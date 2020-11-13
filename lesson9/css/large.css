@@ -20,4 +20,24 @@
     .article-img {
         height: 250px;
       }
+
+      .subContactLayer {
+        max-width: 960px;
+        margin: auto;
+    }
+
+    .largeCityMap {
+        padding-right: 1rem;
+        height: 200px;
+        width: 500px;
+    }
+
+    .socialMedia {
+        padding-top: 1rem;
+    }
+
+    .socialMedia img {
+        padding-right: 1rem;
+        height: 34px;
+    }
 }
