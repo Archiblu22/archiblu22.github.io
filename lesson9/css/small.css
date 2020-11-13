@@ -158,3 +158,22 @@ main {
     max-width: 100%;
     margin-bottom: 0;
   }
+
+  article {
+    margin: 2rem 0;
+}
+
+article p {
+    text-align: left;
+    margin: .5rem 0;
+    line-height: 1.6rem;
+}
+
+.article-img {
+    display: block;
+    float: right;
+    max-width: 100%;
+    margin: auto;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}

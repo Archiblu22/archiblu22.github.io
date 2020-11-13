@@ -17,4 +17,7 @@
         justify-content: center;
     }
 
+    .article-img {
+        height: 250px;
+      }
 }
