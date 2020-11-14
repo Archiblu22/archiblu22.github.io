@@ -1,4 +1,4 @@
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 720px) {
     header img {
         margin: 0 10px;
     }
@@ -35,10 +35,6 @@
         background-color: #89b0ae;
         color: #fff;
     }
-
-    .home-content-wrap {
-        grid-column: 1/3;
-      }
 
       .article-img {
         height: 300px;
@@ -98,4 +94,26 @@
     .SubInfo h3 {
         margin-bottom: 0;
     }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .town-data {
+    display: flex;
+    flex-direction: row;
+    }
+
+    .soda.town-data {
+        flex-direction: row-reverse;
+    }
+
+    .town-data img {
+    border:1px solid #000080;
+    width: 40%;
+    height: auto;
+}
+
+
 }
