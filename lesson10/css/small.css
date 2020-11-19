@@ -4,9 +4,8 @@ h1 {
     font-size: 25px;
 }
 
-p {
+p, h6, h5, h4, h3, h2 {
     font-family: 'Roboto', sans-serif;
-    text-align: center;
 }
 
 header {
@@ -103,6 +102,17 @@ nav a:hover {
     clear: both;
 }
 
+.main-sections {
+    background-color: #ece9e9;
+    padding: 25px;
+}
+
+main {
+    margin: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
 footer {
     background-color: #555b6e;
     color: #fff;
@@ -111,76 +121,120 @@ footer {
     padding: 25px;
 }
 
-body {
-    background-color: #ece9e9;
+main .hero-img img {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-main {
-    padding: 1rem;
+.hero-img {
+    position: relative;
 }
 
-  article {
-    margin: 2rem 0;
-}
-
-article p {
-    text-align: left;
-    margin: .5rem 0;
-    line-height: 1.6rem;
-}
-
-.towndata section {
-    background-color: #555b6e;
-    max-width: 100%;
+.summary {
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    margin-bottom: 10px;
-    padding: 10px;
+    background-color: #555b6e;
+    padding: 10px 12px;
 }
 
-.towndata img {
- max-width: 100%;
- border:1px solid #000080;
-}
-
-.towndata h2 {
+.summary h1 {
+    color: #fff;
     font-family: 'Cormorant Garamond', serif;
-    color: white;
-    text-align: center;
-    font-size: 36px;
-    margin: 0;
+    text-decoration: underline;
 }
 
-.towndata h3 {
+.summary p {
+    color: #fff;
     font-family: 'Cormorant Garamond', serif;
-    color: white;
+    font-weight: bold;
+}
+
+.weatherValue {
+    color: yellow;
+    text-align: left;
+    font-weight: bold;
+}
+
+.secondHalf {
+    padding-top: 55px;
+    padding-right: 12px;
+}
+
+.fiveDayForecast {
+    display: flex;
+    justify-content: center;
+    padding: 1rem .5rem;
+}
+
+.fiveDayForecast div {
+    padding: 0 4.5%;
+    background-color: #89b0ae;
+}
+
+.fiveDayForecast div p {
+    font-family: 'Cormorant Garamond', serif;
+    color: black;
     text-align: center;
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.fiveDayForecast div h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+}
+
+.fiveDayForecast div img {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.forecast {
+    border: .5px solid lightgray;
+    margin: 1.5rem 0;
+    padding-bottom: 0;
+    background-color: #ffd6ba;
+}
+
+.forecast h1 {
+    text-align: left;
+    color: #555b6e;
+    padding: 1.5rem 1rem;
     margin-top: 0;
 }
 
-.towndata p {
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    margin: .5rem;
+.forecastArticle {
+    padding: 0 1rem;
+    margin-top: 0;
 }
 
-.article-img {
-    display: block;
-    float: right;
+.topImg {
+    display: none;
+}
+
+.bottomImg {
     max-width: 100%;
     margin: auto;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.forecast p {
+    line-height: 1.5rem;
+}
+
+.secondParagraph p {
+    text-indent: 1rem;
+}
+
+.forecastArticle p {
+    text-indent: 1rem;
 }
 
 .contactInfo {
-    text-align: center;
-    background-color: #dadada;
+    background-color: #ece9e9;
     margin-top: 1.5rem;
     padding: 2rem 1rem;
     line-height: .5rem;
@@ -191,14 +245,16 @@ article p {
 }
 
 .info img {
-    padding: .2rem .5rem;
+    padding: 1rem;
 }
 
 .smallCityMap {
-    display: none;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    padding-top: 1rem;
 }
 
 .contactInfoLarge {
     display: none;
 }
-

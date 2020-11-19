@@ -1,0 +1,24 @@
+@media only screen and (min-width: 960px) {
+    header button {
+        display: none;
+    }
+    main {
+        margin: auto;
+        max-width: 1200px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+
+    .subContactLayer {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .largeCityMap {
+        padding-right: 1rem;
+        height: 200px;
+        width: 500px;
+    }  
+    
+}
