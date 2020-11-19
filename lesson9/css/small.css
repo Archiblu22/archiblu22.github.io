@@ -148,6 +148,9 @@ article p {
 
 .towndata h2 {
     font-family: 'Cormorant Garamond', serif;
+    background-color:#89b0ae;
+    padding-left: 5rem;
+    padding-right: 5rem;
     color: white;
     text-align: center;
     font-size: 36px;
@@ -159,7 +162,7 @@ article p {
     color: white;
     text-align: center;
     font-size: 18px;
-    margin-top: 0;
+    margin-top: .5rem;
 }
 
 .towndata p {
