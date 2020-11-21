@@ -1,15 +1,48 @@
-const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=5a8b6d64355815c5601d192328cda6b0';
+const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=5a8b6d64355815c5601d192328cda6b0&units=imperial';
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
+        console.table(jsObject);
+        let t = parseFloat(jsObject.main.temp);
+        let s = parseFloat(jsObject.wind.speed);
+        let chill = "N/A";
+        document.getElementById('temp').innerHTML = jsObject.weather[0].description;
+        document.getElementById('feels').innerHTML = Math.round(t) + "&#8457;";
+        document.getElementById("chill").innerHTML = chill + " ";
+        document.getElementById('humidity').innerHTML = jsObject.main.humidity + "&#37;";
+        document.getElementById('speed').innerHTML = Math.round(s) + " mph";
 
-        let valNum = jsObject.main.temp;
-        document.getElementById('current-temp').textContent = (((valNum - 273.15) * 1.8) + 32).toFixed(2);
+        //calculate windchill
+        if (temp >= 50 && speed >= 3) {
+            let f = (35.74 + (0.6215 * t)) - (35.75 * (Math.pow(speed, 0.16))) + (0.4275 * (t * (Math.pow(speed, 0.16))));
+            chill = Math.round(f);
+        } else {
+            chill = "N/A";
+        }
+    });
+const forecastURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=5a8b6d64355815c5601d192328cda6b0';
+fetch(forecastURL)
+    .then((response) => response.json())
+    .then((forecastObject) => {
 
-        const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; // note the concatenation
-        const desc = jsObject.weather[0].description; // note how we reference the weather array
-        document.getElementById('imagesrc').textContent = imagesrc; // informational specification only
-        document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
-        document.getElementById('icon').setAttribute('alt', desc);
+        console.table(forecastObject);
+        var forecast = forecastObject.list.filter(x => x.dt_txt.includes('18:00:00'));
+        console.table(forecast);
+
+        const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+        for (let day = 0; day < forecast.length; day++) {
+
+            const d = new Date(forecast[day].dt_txt);
+            const imgSrc = 'https://openweathermap.org/img/w/' + forecast[day].weather[0].icon + '.png';
+            const desc = forecast[day].weather[0].description;
+
+
+            document.getElementById(`dayofweek${day+1}`).textContent = weekdays[d.getDay()];
+            document.getElementById(`forecast${day+1}`).textContent = Math.round(forecast[day].main.temp);
+            document.getElementById(`icon${day+1}`).setAttribute('src', imgSrc);
+            document.getElementById(`icon${day+1}`).setAttribute('alt', desc);
+
+        }
+
     });

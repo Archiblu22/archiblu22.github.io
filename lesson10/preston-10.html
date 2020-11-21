@@ -51,13 +51,13 @@
             <div class="summary">
                 <div>
                     <h1>Weather Summary</h1>
-                    <p>Currently: <span class="weatherValue">Sunny</span></p>
-                    <p>High: <span class="weatherValue" id="temp">50°F</span></p>
-                    <p>Wind Chill: <span class="weatherValue" id="chill"></span>°F</p>
+                    <p>Currently: <span class="weatherValue" id="temp"></span></p>
+                    <p>High: <span class="weatherValue" id="feels"></span></p>
+                    <p>Wind Chill: <span class="weatherValue" id="chill"></span></p>
                 </div>
                 <div class="secondHalf">
-                    <p>Humidity: <span class="weatherValue">69%</span></p>
-                    <p>Wind Speed: <span class="weatherValue" id="wind">5.0 mph</span></p>
+                    <p>Humidity: <span class="weatherValue" id="humidity"></span></p>
+                    <p>Wind Speed: <span class="weatherValue" id="speed"></span></p>
                 </div>
             </div>
         </div>
@@ -65,29 +65,29 @@
             <h1>5 Day Forecast</h1>
             <div class="fiveDayForecast">
                 <div>
-                    <p>Wed</p>
-                    <img src="/lesson6/images/sunny.png" alt="sun icon">
-                    <h2>89°F</h2>
+                    <p id="dayofweek1"></p>
+                    <img id="icon1" src="#" alt="unknown">
+                    <h2 id="forecast1"></h2>
                 </div>
                 <div>
-                    <p>Thur</p>
-                    <img src="/lesson6/images/sunny.png" alt="sun icon">
-                    <h2>87°F</h2>
+                    <p id="dayofweek2"></p>
+                    <img id="icon2" src="#" alt="unknown">
+                    <h2 id="forecast2"></h2>
                 </div>
                 <div>
-                    <p>Fri</p>
-                    <img src="/lesson6/images/sunny.png" alt="sun icon">
-                    <h2>78°F</h2>
+                    <p id="dayofweek3"></p>
+                    <img id="icon3" src="#" alt="unknown">
+                    <h2 id="forecast3"></h2>
                 </div>
                 <div>
-                    <p>Sat</p>
-                    <img src="/lesson6/images/sunny.png" alt="sun icon">
-                    <h2>75°F</h2>
+                    <p id="dayofweek4"></p>
+                    <img id="icon4" src="#" alt="unknown">
+                    <h2 id="forecast4"></h2>
                 </div>
                 <div>
-                    <p>Sun</p>
-                    <img src="/lesson6/images/sunny.png" alt="sun icon">
-                    <h2>72°F</h2>
+                    <p id="dayofweek5"></p>
+                    <img id="icon5" src="#" alt="unknown">
+                    <h2 id="forecast5"></h2>
                 </div>
             </div>
         </div>
@@ -169,7 +169,7 @@
         <p> &#169; Outvibe | Attributes | Pierre Aguirre |
             Current Date: <span id="currentdate"></span></p>
         <script src="/lesson6/js/lastmodified.js"></script>
-        <script src="/lesson6/js/windchill.js" type="text/javascript"></script>
+        <script src="/lesson10/js/weatherapi.js"></script>
     </footer>
 </body>
 
