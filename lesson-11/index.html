@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="Weather Site" content="Final Site Layout">
+<title>The Weather Site</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/small.css" rel="stylesheet">
+<link href="css/medium.css" rel="stylesheet">
+<link href="css/large.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img src="/lesson-11/images/outvibe-logo.png"
+                    alt="outvibe-logo" title="Outvibe logo"></a>
+            <div>
+                <h1>Outvibe</h1>
+                <p>Vibing whatever the weather</p>
+            </div>
+        </div>
+        <button onclick="toggleMenu()">&#9776;</button>
+    </header>
+
+    <div id="message">
+        <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+
+    <nav class="clearfix">
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html" class="selected">Home</a></li>
+            <li><a href="/lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="main-header">Preston Idaho</h1>
+        <picture class="heroImg">
+            <source media="(max-width: 450px)" src="/lesson-11/images/idaho-small.jpg">
+            <source media="(max-width: 800px)" src="/lesson-11/images/idaho-medium.jpg">
+            <source media="(max-width: 1100px)" src="/lesson-11/images/idaho-large.jpg">
+            <img src="/lesson-11/images/idaho-large.jpg" alt="hero image">
+        </picture>
+
+        <div class="towndata"></div>
+
+        <article>
+            <h1>Learn More About Idaho</h1>
+            <p> 
+                <img class="article-img" src="/lesson-11/images/idaho-capitol.jpg" alt="State Capitol of Idaho">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore
+                et dolore magna aliqua. Commodo elit at imperdiet dui accumsan sit amet. Volutpat odio facilisis
+                mauris sit amet massa vitae. Augue neque gravida in fermentum et sollicitudin ac. Facilisis
+                mauris
+                sit amet massa vitae tortor condimentum lacinia. Sagittis vitae et leo duis. Aenean pharetra
+                magna
+                ac placerat vestibulum. Elit ut aliquam purus sit amet luctus. Elit ut aliquam purus sit. Tempor
+                orci eu lobortis elementum. Purus sit amet luctus venenatis. Lacus suspendisse faucibus interdum
+                posuere lorem ipsum dolor sit. Blandit aliquam etiam erat velit scelerisque in dictum non
+                consectetur. Libero nunc consequat interdum varius sit. Tristique et egestas quis ipsum
+                suspendisse
+                ultrices gravida dictum fusce. Vitae sapien pellentesque habitant morbi tristique senectus et
+                netus.
+            </p>
+        </article>
+    </main>
+    <div class="contactInfo">
+        <h3>Contact Information</h3>
+        <div class="info">
+            <img src="/lesson5/images/location.png" alt="map icon">
+            <p>1234 W 456 S Salt Lake City, UT 84123</p>
+        </div>
+        <div class="info">
+            <img src="/lesson5/images/email.png" alt="email icon">
+            <p>help@outvibe.com</p>
+        </div>
+        <div class="info">
+            <img src="/lesson5/images/telephone.png" alt="phone icon">
+            <p>801-987-6543</p>
+        </div>
+        <img src="/lesson5/images/preston-map.jpg" alt="preston idaho map" class="smallCityMap">
+    </div>
+    <div class="contactInfoLarge">
+        <div class="subContactLayer">
+            <img src="/lesson5/images/preston-map.jpg" alt="preston idaho map" class="largeCityMap">
+            <div class="SubInfo">
+                <h3>Contact Information</h3>
+                <div class="infoLarge">
+                    <img src="/lesson5/images/location.png" alt="map icon" class="contactInfoIcon">
+                    <p class="address">1234 W 456 S Salt Lake City, UT 84123</p>
+                </div>
+                <div class="infoLarge">
+                    <img src="/lesson5/images/email.png" alt="email icon" class="contactInfoIcon">
+                    <p>help@outvibe.com</p>
+                </div>
+                <div class="infoLarge">
+                    <img src="/lesson5/images/telephone.png" alt="phone icon" class="contactInfoIcon">
+                    <p>801-987-6543</p>
+                </div>
+                <div class="socialMedia">
+                    <img src="/lesson5/images/facebook.png" alt="facebook icon">
+                    <img src="/lesson5/images/instagram.png" alt="instagram icon">
+                    <img src="/lesson5/images/twitter.png" alt="twitter icon">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p> &#169; Outvibe | Attributes | Pierre Aguirre |
+            Current Date: <span id="currentdate"></span></p>
+        <script src="/lesson6/js/lastmodified.js"></script>
+        <script src="/lesson-11/js/town-data.js"></script>
+    </footer>
+    </body>
+    </html>

@@ -1,0 +1,59 @@
+@media only screen and (min-width: 1143px) {
+    header button {
+        display: none;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+    
+    .towndata {
+    display: flex;
+}
+
+.towndata h2 {
+    background-color:#89b0ae;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.towndata section {
+    background-color: #555b6e;
+    max-width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+}
+
+    .article-img {
+        display: block;
+        float: right;
+        max-width: 100%;
+        margin: auto;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .subContactLayer {
+        max-width: 960px;
+        margin: auto;
+    }
+
+    .largeCityMap {
+        padding-right: 1rem;
+        height: 200px;
+        width: 500px;
+    }
+
+    .socialMedia {
+        padding-top: 1rem;
+    }
+
+    .socialMedia img {
+        padding-right: 1rem;
+        height: 34px;
+    }
+}
