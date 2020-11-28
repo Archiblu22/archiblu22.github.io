@@ -146,5 +146,127 @@
         grid-column: 2;
     }
 
+    form label.top input, form label.top select {
+        width: 96%;
+    }
 
+    .images {
+        display: grid;
+        grid-gap: 11px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 19.5%;
+        margin-bottom: 1rem;
+    }
+
+    .lazy-card {
+        height: 400px;
+    }
+
+    .lazyimage {
+        height: 350px;
+    }
+
+    .title {
+        font-size: 22px;
+        margin: .6rem 0 .5rem 1rem;
+    }
+   
+    .image9 {
+    grid-column: 1/3;
+    }
+
+    .summary {
+        position: absolute;
+        top: 1.5rem;
+        left: 2rem;
+        padding: 1rem;
+        padding-right: 3rem;
+        white-space: nowrap;
+        width: 13rem;
+        color: #fff;
+        background-color: rgba(85, 91, 110, 0.8);
+        border-radius: 3px;
+    }
+
+    .summary h1 {
+        margin: 0;
+        font-size: 25px;
+    }
+
+    .summary {
+        display: block;
+    }
+
+    .secondHalf {
+        padding-top: 0px;
+        padding-right: 12px;
+    }
+
+    .topImg {
+        display: block;
+        float: right;
+        margin: 0;
+        max-width: 100%;
+        height: 300px;
+        margin: 0 0 1rem 1rem;
+    }
+
+    .secondParagraph {
+        display: block;
+    }
+
+    .bottomImg {
+        display: none;
+    }
+
+    .contactInfoLarge {
+        display: block;
+        background-color: #ece9e9;
+        margin-top: 1.5rem;
+        padding: 3rem 1rem;
+    }
+
+    .subContactLayer {
+        display: flex;
+    }
+
+    .largeCityMap {
+        display: block;
+        text-align: left;
+        max-width: 100%;
+        padding-right: 1rem;
+        height: 200px;
+        width: 400px;
+    }
+
+    .infoLarge {
+        display: flex;
+        font-size: 18px;
+    }
+
+    .contactInfoIcon {
+        padding: 1rem;
+    }
+
+    .SubInfo {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    .socialMedia {
+        padding-top: .4rem; 
+    }
+
+    .socialMedia img {
+        padding: .5rem;
+    }
+
+    .contactInfo {
+        display: none;
+    }
+
+    .SubInfo h3 {
+        margin-bottom: .5em;
+    }
 }
