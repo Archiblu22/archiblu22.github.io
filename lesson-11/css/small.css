@@ -399,10 +399,12 @@ main .hero-img img {
 
 .secondParagraph p {
     text-indent: 1rem;
+    text-align: left;
 }
 
 .forecastArticle p {
     text-indent: 1rem;
+    text-align: left;
 }
 
 .contactInfo {
