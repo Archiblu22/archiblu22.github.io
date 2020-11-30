@@ -16,11 +16,17 @@ main {
     margin: auto;
     max-width: 1020px;
 }
+ div.hero-img {
+     position: relative;
+ }
 
+ div.summary {
+     position: absolute;
+ }
 
 .summary {
-    top: 16.5rem;
-    left: 5rem;
+    top: 1.5rem;
+    left: 2rem;
     padding: 1rem 1.5em;
     width: 16rem;
     padding: 1rem;
