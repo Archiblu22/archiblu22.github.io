@@ -115,10 +115,23 @@ body {
     background-color: #ece9e9;
 }
 
-main {
-    padding: 1rem;
+.main-sections {
+    background-color: #dadada;
+    padding: 25px;
+    border: #333333 dashed 1px;
 }
 
+main {
+    margin: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+main .hero-img img {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
 
 article {
     margin: 2rem 0;
@@ -293,19 +306,15 @@ form label.top input:required:valid {
 }
 
 
-main .hero-img img {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-}
+.heroImg img {
+    max-width: 100%;
+    margin: auto;
 
-.hero-img {
-    position: relative;
 }
 
 .summary {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #555b6e;
     padding: 10px 12px;
 }
@@ -320,6 +329,7 @@ main .hero-img img {
     color: #fff;
     font-family: 'Cormorant Garamond', serif;
     font-weight: bold;
+    text-align: left;
 }
 
 .weatherValue {

@@ -11,6 +11,23 @@
     display: flex;
 }
 
+
+main {
+    margin: auto;
+    max-width: 1020px;
+}
+
+
+.summary {
+    top: 16.5rem;
+    left: 5rem;
+    padding: 1rem 1.5em;
+    width: 16rem;
+    padding: 1rem;
+    padding-right: 0rem;
+}
+
+
 .towndata h2 {
     background-color:#89b0ae;
     padding-left: 3rem;
