@@ -1,0 +1,54 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+    nav button { display:none; }  /* hamburger button does not need to be shown */
+
+    nav ul.hide {
+        display: inline-flex;
+    }
+    nav ul li a {
+        display: inline-flex;
+        font-size: 1em;
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .6rem 2rem;
+    }
+    nav ul li {
+        display: inline-flex;
+    }
+
+    div.rentalBox {
+        font-size: 2.4vw;
+    }
+
+    /*---Photo Gallery Grid-----*/
+    div.threeGallery {
+        grid-gap: 10px;
+        padding: 1%;
+    }
+    section .threeGallery {
+        grid-template-columns: repeat(3, 32.5%);
+        width: 100%;
+        margin: 0 0 5% 0;
+    }
+    div.threeGallery a {
+       margin: 0;
+    }
+    footer div.footerLinks ul li{
+        display: inline-flex;
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .6rem 2rem;
+    }
+    footer div.footerLinks {
+        text-align: center;
+    }
+
+    /* SERVICE TABLE */
+    aside {
+        grid-template-columns: repeat(3, 34%);
+        width: 100%;
+        margin: 0;
+    }
+
+}
