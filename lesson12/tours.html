@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Scoots | Adventure Starts Here</title>
+        <meta name="author" content="Pierre Aguirre">
+        <meta name="description" content="Scoots is a fictitious motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.">
+
+        <!-- external style references in the proper cascading order -->
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"><!-- Google API font reference -->
+        <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="css/small.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="css/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="css/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+
+        <!-- favicon link -->
+        <link rel="shortcut icon" href="scoots.ico">
+    </head>
+    
+    <body>
+        <a href="scoots.html"><header>
+            <img src="images/scoots-logo.png" alt="Scoots Logo">
+            </header></a>
+
+        <!-- Navigation -->
+            <nav>
+                <button onclick="toggleNavMenu()">&#9776;</button>
+                <ul class="hide mainmenu" id="primaryNav">
+                    <li><a href="scoots.html">HOME</a></li>
+                    <li><a href="rentals.html">RENTALS</a></li>
+                    <li><a href="reservations.html">RESERVATIONS</a></li>
+                    <li><a href="tours.html">TOURS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+        <main>
+            <div id="callToAction">
+                <h2 class="h2Contrast">COZUMEL<br>TOURS</h2>
+                <figure>
+                    <img src="images/tours-cover.jpg" alt="Beach and Palm Tree" sizes="100vw"
+                         srcset="images/tours-cover.jpg 400w,
+                                 images/tours-cover.jpg 800w,
+                                 images/tours-cover.jpg 1200w">
+                </figure>
+            </div>
+
+            <section class="event">
+                <h2>Fun For Everyone!</h2>
+                <p>There are so many fun things to do in Cozumel, Mexico! If you're looking for some extra fun adventures, see these other options of tours and activities you can participate in. A lot of them can be done in small or large groups. Sponsored by Tripadvisor.</p>
+            </section>
+
+            <section class="tours">
+                <div class="jeepExcursion">
+                    <img  src="images/jeep-excursion.jpg" alt="Happy couple in jeep">
+                    <a href="https://www.tripadvisor.com/AttractionProductReview-g150809-d11456968-Private_Jeep_Excursion_in_Cozumel_with_Lunch_and_Snorkeling-Cozumel_Yucatan_Penins.html"><h2>Jeep Excursion</h2></a>
+                    <p>Mexico’s largest inhabited island, Cozumel boasts pristine Caribbean beaches and spectacular coral life. On this exclusive jungle and snorkeling tour, you’ll get a taste of the island’s ancient culture and natural beauty behind the wheel of your own private jeep—with time to savor local delicacies. Maximize your visit by covering all the island's must-see sites in one visit.</p>
+                </div>
+                <div class="foodTour">
+                    <img  src="images/food-tour.jpg" alt="Shrimp tacos near beach">
+                    <a href="https://www.tripadvisor.com/AttractionProductReview-g150809-d11455117-Cozumel_Food_Tour-Cozumel_Yucatan_Peninsula.html"><h2>Food Tour</h2></a>
+                    <p>Pleasure your palate with meat-stuffed empanadas, succulent shrimp tacos, and sweet Mexican pastries on a culinary tour of Cozumel. Sample the exotic flavors of the idyllic island, noting the Mexican spice and Caribbean flair of the dishes due to Cozumel’s close proximity to Cuba. Immerse yourself in the culinary customs of the area as a knowledgeable guide takes you to five favorite local haunts to same fine Yucatan bites and beverages. Enjoy personalized attention and round-trip transportation on this intimate small group tour.</p>
+                </div>
+                <div class="atvAdventure">
+                    <img  src="images/atv-adventure.jpg" alt="Riding ATVs">
+                    <a href="https://www.tripadvisor.com/AttractionProductReview-g150809-d11874831-ATV_Adventure_Beach_Break-Cozumel_Yucatan_Peninsula.html"><h2>ATV Adventure</h2></a>
+                    <p>Make the most of limited time on this ATV adventure tour in Cozumel, a great choice for a shore excursion or for those who want to experience multiple island highlights in a single trip. Alongside your guide, drive your ATV through the jungle and down a series of trails to explore caves that make up the Yucatan’s extensive underwater river system and dive into a freshwater cenote. That leaves just enough time to ride through a coral cave and learn about Maya culture.</p>
+                </div>
+                <div class="submarineExpedition">
+                    <img  src="images/submarine-tour.jpg" alt="Coral reef">
+                    <a href="https://www.tripadvisor.com/AttractionProductReview-g150809-d11449893-Atlantis_Submarine_Expedition_in_Cozumel-Cozumel_Yucatan_Peninsula.html"><h2>Submarine Expedition</h2></a>
+                    <p>Make the most of limited time and explore one of Cozumel’s most captivating coral reefs with a guide. Descend to depths of 100 feet (30 meters) and cruise along the ocean floor in the air-conditioned comfort of an Atlantis Submarine without getting wet. On this reef tour, you’ll learn about the marine ecosystem and see parts of the reef that were previously only accessible to scuba divers.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+                <div>
+                    <a class="socialmedia" target="_blank" href="https://www.facebook.com/"><img class="icon" src="images/facebook.png" alt="facebook"></a>
+                    <a class="socialmedia" target="_blank" href="https://www.instagram.com/"><img class="icon" src="images/instagram.png" alt="instagram"></a>
+                    <a class="socialmedia" target="_blank" href="https://www.twitter.com/"><img class="icon" src="images/twitter.png" alt="twitter"></a>
+                </div>
+                    <p>&copy;2020 Scoots Rental<br><br><span id="currentdate"></span></p>
+                <div id="reference">
+                    <a href="resources.html"><h2>RESOURCES</h2></a> | <a href="overview.html"><h2>OVERVIEW</h2></a>
+                </div>
+        </footer>
+        <script src="js/menu.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/rental.js"></script>
+    </body>
+</html>

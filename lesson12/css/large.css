@@ -31,23 +31,11 @@
         margin: 5%;
     }
 
-    /* SERVICE TABLE */
-    aside {
-        grid-template-columns: repeat(3, 32%);
-        width: 85%;
-        margin: 0 9%;
+    .tours img {
+        margin-right: 3rem;
     }
 
-    /* CONTACT PAGE */
-    section.contactUs {
-        display: flex;
-        justify-content: center;
-    }
-    .contactUs div {
-        margin: 20px
-    }
-
-  section#shopCenter {
-        margin: 0 20vw;
+    #maps {        
+        margin-left: 2rem;
     }
 }

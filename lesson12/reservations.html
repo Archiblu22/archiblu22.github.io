@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Scoots | Adventure Starts Here</title>
+        <meta name="author" content="Pierre Aguirre">
+        <meta name="description" content="Scoots is a fictitious motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.">
+
+        <!-- external style references in the proper cascading order -->
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"><!-- Google API font reference -->
+        <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="css/small.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="css/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="css/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+
+        <!-- favicon link -->
+        <link rel="shortcut icon" href="scoots.ico">
+    </head>
+    
+    <body>
+        <a href="scoots.html"><header>
+            <img src="images/scoots-logo.png" alt="Scoots Logo">
+            </header></a>
+
+        <!-- Navigation -->
+            <nav>
+                <button onclick="toggleNavMenu()">&#9776;</button>
+                <ul class="hide mainmenu" id="primaryNav">
+                    <li><a href="scoots.html">HOME</a></li>
+                    <li><a href="rentals.html">RENTALS</a></li>
+                    <li><a href="reservations.html">RESERVATIONS</a></li>
+                    <li><a href="tours.html">TOURS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+        <main>
+            <div id="callToAction">
+                <h2 class="h2Contrast">RESERVATION<br>CENTER</h2>
+                <figure>
+                    <img src="images/rentals-cover.jpg" alt="Line of Rental Scooters" sizes="100vw"
+                         srcset="images/reservations-cover.jpg 400w,
+                                 images/reservations-cover.jpg 800w,
+                                 images/reservations-cover.jpg 1200w">
+                </figure>
+            </div>
+
+            <section class="event">
+                <h2>Rental Agreement</h2>
+                <p>A $50 security deposit is required to confirm reservations. A valid drivers license is required in hand at time of rental. No one under 12 years of age are allowed to ride on the scooters. Fuel charge is not included. Reservations rate requires 24 hour prior notification. Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals. Rentals may be returned to either of our locations. There is unlimited mileage and liability insurance is free of charge. Payment available via Google Pay, cash, credit card, debit card, or PayPal.</p>
+            </section>
+
+            <h3>Reservation Information</h3>
+            <form action="thanks.html" method="get" enctype="multipart/form-data" name="reservation" id="userReport">
+                <fieldset>
+                    <legend><span>Contact Information</span></legend>
+                    <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required ></label>
+                    <label><span>Email:</span><input name="email" type="email" value="" placeholder="example@email.com" required ></label>
+                    <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="1235551234" pattern="[0-9]{10,20}" required ></label>
+                    <label><span>Home State/Country:</span><input type="text" name="stateType"></label>
+                </fieldset>
+                <fieldset>
+                    <legend><span>Reservation Period</span></legend>
+                    <label><span>Reservation Date:</span><input name="date" type="date" required ></label>
+                    <label><span>Rental Period:</span>
+                        <select name="rental-period">
+                            <option value="select" disabled selected>Select Rental Period</option>
+                            <option value="half-day">Half Day (3hrs)</option>
+                            <option value="full-day">Full Day</option>
+                        </select></label>
+                    <label><span>Rental Option:</span>
+                        <select name="rentals">
+                            <option value="select" disabled selected>Select Rental Option</option>
+                            <option value="metro-scooter">Honda Metro Scooter</option>
+                            <option value="dio-scooter">Honda Dio Scooter</option>
+                            <option value="pcx150-scooter">Honda PCX150 Scooter</option>
+                            <option value="pioneer-atv">Honda Pioneer ATV</option>
+                            <option value="wrangler-4-door">Jeep Wrangler - 4 door</option>
+                            <option value="wrangler-2-door">Jeep Wrangler - 2 door</option>
+                        </select></label>
+                    <label><span>Number of Riders:</span>
+                            <select name="rental-period">
+                                <option value="select" disabled selected>Select Rider Count</option>
+                                <option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                                <option value="four">4</option>
+                                <option value="five">5 (Max)</option>
+                            </select></label>                    
+                        <label><span>Cruise Line (if applicable):</span><input type="text" name="cruiseLine"></label>
+                    <label><span>Special Accommodations:</span></label>
+                    <label class="container"><span class="answer">Yes</span>
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container"><span class="answer">No</span>
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend><span>Additional Comments</span></legend>
+                    <textarea name="comments" rows="15" cols="40"></textarea>
+                </fieldset>
+
+                <input type="submit" value="Submit" class="submitBtn">
+                <input type="hidden" value="reservation-form" name="subject" >
+                <input name="redirect" type="hidden" value="thanks.html">
+            </form>
+        </main>
+
+        <footer>
+                <div>
+                    <a class="socialmedia" target="_blank" href="https://www.facebook.com/"><img class="icon" src="images/facebook.png" alt="facebook"></a>
+                    <a class="socialmedia" target="_blank" href="https://www.instagram.com/"><img class="icon" src="images/instagram.png" alt="instagram"></a>
+                    <a class="socialmedia" target="_blank" href="https://www.twitter.com/"><img class="icon" src="images/twitter.png" alt="twitter"></a>
+                </div>
+                    <p>&copy;2020 Scoots Rental<br><br><span id="currentdate"></span></p>
+                <div id="reference">
+                    <a href="resources.html"><h2>RESOURCES</h2></a> | <a href="overview.html"><h2>OVERVIEW</h2></a>
+                </div>
+        </footer>
+        <script src="js/menu.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/rental.js"></script>
+    </body>
+</html>

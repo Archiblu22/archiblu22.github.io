@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Scoots | Adventure Starts Here</title>
+        <meta name="author" content="Pierre Aguirre">
+        <meta name="description" content="Scoots is a fictitious motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.">
+
+        <!-- external style references in the proper cascading order -->
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"><!-- Google API font reference -->
+        <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="css/small.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="css/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="css/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+
+        <!-- favicon link -->
+        <link rel="shortcut icon" href="scoots.ico">
+    </head>
+    
+    <body>
+        <a href="scoots.html"><header>
+            <img src="images/scoots-logo.png" alt="Scoots Logo">
+            </header></a>
+
+        <!-- Navigation -->
+            <nav>
+                <button onclick="toggleNavMenu()">&#9776;</button>
+                <ul class="hide mainmenu" id="primaryNav">
+                    <li><a href="scoots.html">HOME</a></li>
+                    <li><a href="rentals.html">RENTALS</a></li>
+                    <li><a href="reservations.html">RESERVATIONS</a></li>
+                    <li><a href="tours.html">TOURS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+
+        <main>
+            <div id="callToAction">
+                <figure>
+                    <img src="images/scoot-locations.jpg" alt="scoots locations" sizes="100vw"
+                         srcset="images/scoot-locations.jpg 400w,
+                                 images/scoot-locations.jpg 800w,
+                                 images/scoot-locations.jpg 1200w">
+                </figure>
+            </div>
+
+            <section class="event">
+                <h2>Contact Information</h2>
+                <p>Headquartered in Cozumel, Mexico<br>
+                    For general email questions please email helpdesk@scootsrental.com<br>
+                    For reservations or cancellations please email rentals@scootsrental.com<br>
+                    Phone Number: (987) 654-3321 (calls outside of Mexico dial +52 prior to number)</p>
+                    <table class="hours">
+                        <thead>
+                            <tr>
+                                <th colspan="3" class="title">Hours of Operation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday</td>
+                                <td>9:00 AM</td>
+                                <td>5:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>9:00 AM</td>
+                                <td>5:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>9:00 AM</td>
+                                <td>5:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>9:00 AM</td>
+                                <td>5:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>9:00 AM</td>
+                                <td>7:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>9:00 AM</td>
+                                <td>7:00 PM</td>
+                            </tr>
+                            <tr>
+                                <td  class="last">Sunday</td>
+                                <td class="last">Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                  
+            <div>
+                <form action="thankscontact.html" method="get" enctype="multipart/form-data" name="event" id="userReport">
+                    <fieldset>
+                        <legend><span>Contact Us</span></legend>
+                        <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required ></label>
+                        <label><span>Email:</span><input name="email" type="email" value="" placeholder="example@email.com" required ></label>
+                        <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="1235551234" pattern="[0-9]{10,20}"></label>
+                        <label><span>Message:</span></label>
+                        <textarea name="comments" rows="7" cols="40"></textarea>
+                            <input type="submit" value="Submit" class="submitBtn">
+                    </fieldset>
+                        <input type="hidden" value="Event Registration" name="subject" >
+                        <input name="redirect" type="hidden" value="thanks.html">
+                </form>
+            </div>
+            
+            <h2>Two Beautiful Rental Locations</h2>
+            <div id="maps">
+            <section>
+                <h2>Playa Del Carmen</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.8592003828203!2d-86.95297304830379!3d20.511997386213416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cf3a0ece15%3A0x9216e3c2b55e5526!2sPlaya%20del%20Carmen-Cozumel%20Ferry%20Dock!5e0!3m2!1sen!2sus!4v1607737830294!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>            
+            </section>
+            <section>
+                <h2>Terminal Puerta Maya</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29048.925980416774!2d-86.99181469420571!3d20.48507893453704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5748bac98d29%3A0xec697a2a774f7a00!2sPuerta%20Maya%20Cruise%20Ship%20Terminal!5e0!3m2!1sen!2sus!4v1607737980384!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>           
+            </section>
+            </div>
+            </main>
+
+        <footer>
+                <div>
+                    <a class="socialmedia" target="_blank" href="https://www.facebook.com/"><img class="icon" src="images/facebook.png" alt="facebook"></a>
+                    <a class="socialmedia" target="_blank" href="https://www.instagram.com/"><img class="icon" src="images/instagram.png" alt="instagram"></a>
+                    <a class="socialmedia" target="_blank" href="https://www.twitter.com/"><img class="icon" src="images/twitter.png" alt="twitter"></a>
+                </div>
+                    <p>&copy;2020 Scoots Rental<br><br><span id="currentdate"></span></p>
+                <div id="reference">
+                    <a href="resources.html"><h2>RESOURCES</h2></a> | <a href="overview.html"><h2>OVERVIEW</h2></a>
+                </div>
+        </footer>
+        <script src="js/menu.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/rental.js"></script>
+    </body>
+</html>
