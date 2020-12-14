@@ -27,12 +27,13 @@
 
     div.rentalBox {
         margin-top: 9rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     div.threeGallery {
         grid-gap: 10px;
         padding: 1%;
+        padding-top: .5%;
     }
 
     section .threeGallery {
