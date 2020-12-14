@@ -1,6 +1,4 @@
-/* This main css file contains the default rules and is geared toward the small/phone view */
-
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+* { box-sizing: border-box;}
 
 body {
     margin: 0;
@@ -27,6 +25,7 @@ nav {
     font-family: 'Libre Baskerville', serif;
     font-size: 15px;
 }
+
 nav button {
     margin: .7rem;
     background-color: transparent;
@@ -34,12 +33,14 @@ nav button {
     font-size: 1.9rem;
     color: #fff;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 
 }
+
 nav ul li a {
     display: flex;
     flex-flow: row wrap;
@@ -48,41 +49,59 @@ nav ul li a {
     color: #fff;
     border-top: 1px solid rgba(0,0,0,0.3);
 }
-nav ul li a:hover {background-color: #30AEC7; color: white;}
-nav ul li.active a {background-color: #30AEC7; color: white;}
-nav ul.hide {display: none;}
+
+nav ul li a:hover {
+    background-color: #30AEC7; color: white;
+}
+
+nav ul li.active a {
+    background-color: #30AEC7; color: white;
+}
+
+nav ul.hide {
+    display: none;
+}
 
 /* MAIN */
 main figure {
     margin: 0;
 }
+
+div#callToAction {
+    margin: -3px;
+}
+
 main div#callToAction h2 {
     font-family: 'Libre Baskerville', serif;
     color: #F35F00;
     position: absolute;
-    margin-top: 6vw;
-    margin-left: 6vw;
-    font-size: 4.5vw;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
 }
+
 div.rentalBox {
     position: absolute;
     background-color: #F8C514;
-    padding: .6vw 2vw;
-    margin-top: 18vw;
-    margin-left: 6vw;
+    padding: .3rem .5rem;
+    margin-top: 5.6rem;
+    margin-left: 2rem;
     color: #fff;
     font-family: 'Libre Baskerville', serif;
-    font-size: 3.5vw;
+    font-size: 1rem;
 }
+
 .rentalBox a {
     color: #fff;
     text-decoration: none;
     text-align: center;
 }
+
 .summary {
     font-family: 'Libre Baskerville', serif;
     text-align: center;
 }
+
 div.about {
     font-family: 'Libre Baskerville', serif;
     margin: 20px;
@@ -96,17 +115,21 @@ div.about {
     background-color: #F8C514;
     padding-top: 5px;
 }
+
 .threeDayContainer h1 {
     color: white;
 }
+
 .threeDayForecast {
     display: flex;
     justify-content: center;
     padding: 1rem .5rem;
 }
+
 .threeDayForecast div{
     padding: 0 6.5%;
 }
+
 .threeDayForecast div p {
     font-family: 'Libre Baskerville', serif;
     color: white;
@@ -115,6 +138,7 @@ div.about {
     font-weight: bold;
     margin-bottom: 0;
 }
+
 .threeDayForecast div h2 {
     font-family: 'Libre Baskerville', serif;
     color: white;
@@ -122,6 +146,7 @@ div.about {
     font-size: 20px;
     margin-top: 0;
 }
+
 .threeDayForecast div img {
     margin-left: 0;
     margin-right: 0;
@@ -134,10 +159,12 @@ div.threeGallery {
     display: grid;
     grid-template-columns: repeat(1, 100%);
 }
+
 div.threeGallery img {
     width: 100%;
 }
-div.threeGallery h5, div.threeGallery h2 {
+
+div.threeGallery h5, div.threeGallery h2, .rentals h5 {
     background-color: black;
     color: #fff;
     font-family: 'Libre Baskerville', serif;
@@ -146,6 +173,7 @@ div.threeGallery h5, div.threeGallery h2 {
     padding: 25px;
     text-align: center;
 }
+
 div.threeGallery p {
     font-family: 'Libre Baskerville', serif;
     font-size: 1.2rem;
@@ -155,33 +183,31 @@ div.threeGallery p {
     margin: 0;
     color: black;
 }
+
 div.threeGallery p.price {
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
     padding: 10px;
 }
+
 div.threeGallery figure {
     box-shadow: 0px 0px 15px .2px #E5E5E5;
     margin-bottom: 5px;
 }
 
 /* TOURS */
-.intro {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 18px;
-    line-height: 1.5rem;   
-    margin: 2rem;
-}
 .tours img {
     width: 100%;
 }
+
 .tours p {
     font-family: 'Libre Baskerville', serif;
     font-size: 18px;
     line-height: 1.5rem;
     padding: 1rem;
 }
+
 .tours h2 {
     font-family: 'Libre Baskerville', serif;
     text-align: center;
@@ -193,6 +219,7 @@ section.event {
     background-color: #F35F00;
     padding: 10px;
 }
+
 .event h2 {
     font-family: 'Libre Baskerville', serif;
     color: white;
@@ -201,6 +228,7 @@ section.event {
     text-align: center;
     margin: 20px;
 }
+
 .event p {
     font-family: 'Libre Baskerville', serif;
     color: white;
@@ -208,9 +236,11 @@ section.event {
     font-size: 1.3rem;
     line-height: 2rem;
 }
+
 .event span {
     font-weight: bold;
 }
+
 h3 {
     font-family: 'Libre Baskerville', serif;
     text-align: center;
@@ -219,23 +249,28 @@ h3 {
     padding: 20px 0 0 0;
     font-size: 2.5rem;
 }
+
 .thanks {
     padding: 5%;
     text-align: center;
 }
+
 .thanks p {
     font-family: 'Libre Baskerville', serif;
     font-size: 1.3rem;
     line-height: 2rem;
 }
+
 form#userReport {
     padding: 0 9% 30px;
 }
+
 fieldset {
     border-radius: .3em;
     margin: 1.1em 0;
     border: #30AEC7 solid 5px;
 }
+
 legend {
     font-family: 'Libre Baskerville', serif;
     font-size: 1.2em;
@@ -245,11 +280,13 @@ legend {
     background-color: #F8C514;
     border-radius: .3em;
 }
+
 label {
     display: block;
     margin: .5em;
     font-family: 'Libre Baskerville', serif;
 }
+
 label span {
     font-family: 'Libre Baskerville', serif;
     display: block;
@@ -258,8 +295,8 @@ label span {
     padding-top: .9em;
     padding-bottom: .2em;
 }
+
 input.submitBtn {
-    -webkit-appearance: none; /*remove the apple mobile default styling*/
     display: block;
     color: #fff;
     border: solid 1px #F35F00;
@@ -274,8 +311,6 @@ input.submitBtn {
     font-size: 1.5em;
 }
 
-/*----Radio Buttons----*/
-/* The container */
 .container {
     display: block;
     position: relative;
@@ -289,14 +324,12 @@ input.submitBtn {
     user-select: none;
 }
 
-/* Hide the browser's default radio button */
 .container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
 
-/* Create a custom radio button */
 .checkmark {
     position: absolute;
     top: 0;
@@ -306,12 +339,10 @@ input.submitBtn {
     border-radius: 50%;
 }
 
-/* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
     background-color: #F35F00;
 }
 
-/* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
     content: "";
     position: absolute;
@@ -323,12 +354,10 @@ label span.answer {
     font-size: .8em;
 }
 
-/* Show the indicator (dot/circle) when checked */
 .container input:checked ~ .checkmark:after {
     display: block;
 }
 
-/* Style the indicator (dot/circle) */
 .container .checkmark:after {
     top: 9px;
     left: 10px;
@@ -338,7 +367,6 @@ label span.answer {
     background: white;
 }
 
-/*NEW HTML5 VALIDATION*/
 label input {
     background-color: white;
     color: #000;
@@ -352,46 +380,54 @@ label input {
     background-repeat: no-repeat;
     background-position: 4px 61px;
 }
-/*identifies all the required fields*/
+
 input:required {
     background-position: 4px -61px; /*shows the red star*/
 }
-/*Validation*/
+
 input:focus:invalid {
     background-position: 4px -111px; /*shows the yelllow cirle*/
 }
-/*Valid*/
+
 input:required:valid {
     background-color: #fff;
     background-position: 4px -161px; /*shows the green check*/
 }
 
-
 /*  RENTALS  */
-#slideshow {
-    position: relative;
-    width: 100%;
-    height: 33vw;
-    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+.rentals {
+    display: grid;
+    grid-template-columns: 1fr;
 }
-#slideshow > div {
-    position: absolute;
-}
-#accordion p {
-    font-family: 'Open sans', sans-serif;
-    margin: 0 9%;
-    font-size: 1.3rem;
-    line-height: 1.5em;
-}
-#accordion img {
-    width: 100%;
-}
-.price {
+
+.rentals img {
     display: block;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    width: 80%;
+}
+.rentals h2 {
+    display: block;
+    border-bottom: 1.3px solid grey;
+    padding-bottom: 5px;
+    font-size: 1.5em;
     font-weight: bold;
-    font-size: 1.8rem;
-    padding-bottom: 10px;
+    text-align: center;
+}
+
+p, div, a {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.rentals section {
+    margin: 0.5rem;
+}
+
+article {
+    background-color: white;
+    padding: 1em;
+    border-radius: 0 0 7px 7px;
 }
 
 /* CONTACT PAGE */
@@ -400,9 +436,11 @@ input:required:valid {
     margin-right: auto;
     padding-bottom: 2rem;
 }
+
 thead {
     text-align: center;
 }
+
 .title {
     font-family: 'Libre Baskerville', serif;
     color: white;
@@ -410,6 +448,7 @@ thead {
     font-size: 2rem;
     padding: 10px;
 }
+
 td {
     font-family: 'Libre Baskerville', serif;
     color: white;
@@ -427,22 +466,14 @@ h2 {
 
 #maps {
     display: grid;
-    grid-template-columns: 1r;
+    grid-template-columns: 1fr;
 }
 
 /* RESOURCES */
-p>a {
-    color: #f35f00;
-}
 #reference a {
     display: inline-block;
     color: white;
-    font-size: .8rem;
-}
-
-/* OVERVIEW */
-video {
-    width: 100%;
+    font-size: .7rem;
 }
 
  /* FOOTER */
@@ -455,10 +486,7 @@ footer {
     text-decoration: none;
 
 }
-footer a {
-    color: white;
-    text-transform: capitalize;
-}
+
 .clearfix:after {
     content: " "; /* Older browser do not support empty content */
     visibility: hidden;

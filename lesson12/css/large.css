@@ -1,34 +1,23 @@
 @media only screen and (min-width: 64em) {
-    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
-    nav button { display:none; }  /* hamburger button does not need to be shown */
+    nav button {
+        display:none;
+    }
+
+    main div#callToAction h2 {
+        margin-top: 3rem;
+        margin-left: 2.5rem;
+        font-size: 3.5rem;
+    }
+
+    div.rentalBox {
+        margin-top: 11rem;
+        margin-left: 2.5rem;
+        font-size: 2.5rem;
+    }
 
     div.threeGallery {
-        grid-template-columns: repeat(3fr);
+        grid-template-columns: repeat(3);
         width: 100%;
-    }
-    .customersTalk {
-        display: block;
-    }
-    .customersTalk h3 {
-        font-family: 'Asap condensed', sans-serif;
-        font-style: italic;
-        font-size: 3rem;
-        font-weight: 800;
-        text-align: center;
-        color: #000;
-        margin: 70px 20px 20px;
-    }
-    aside.reviews {
-        font-family: 'Open sans', sans-serif;
-        font-size: 1.4rem;
-        display: flex;
-        justify-content: space-around;
-        margin: 0 9% ;
-        background-color: rgba(0,0,0,0.1);
-        box-shadow: 5px 10px 20px #BFBFBF;
-    }
-    div.intro {
-        margin: 5%;
     }
 
     .tours img {
@@ -38,4 +27,12 @@
     #maps {        
         margin-left: 2rem;
     }
+
+    .rentals {
+        grid-template-columns: 1fr 1fr 1fr;
+        }
+        
+        .rentals section:nth-child(3) {
+            grid-column: span 1;
+        }
 }

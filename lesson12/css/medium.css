@@ -1,11 +1,12 @@
 @media only screen and (min-width: 735px) {
-    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
-
-    nav button { display:none; }  /* hamburger button does not need to be shown */
+    nav button {
+        display:none;
+    }
 
     nav ul.hide {
         display: inline-flex;
     }
+
     nav ul li a {
         display: inline-flex;
         font-size: 1em;
@@ -13,23 +14,32 @@
         border-right: 1px solid rgba(0,0,0,0.3);
         padding: .6rem 2rem;
     }
+    
     nav ul li {
         display: inline-flex;
     }
 
-    div.rentalBox {
-        font-size: 2.4vw;
+    main div#callToAction h2 {
+        margin-top: 3rem;
+        margin-left: 2rem;
+        font-size: 2.5rem;
     }
 
-    /*---Photo Gallery Grid-----*/
+    div.rentalBox {
+        margin-top: 9rem;
+        font-size: 2rem;
+    }
+
     div.threeGallery {
         grid-gap: 10px;
         padding: 1%;
     }
+
     section .threeGallery {
         grid-template-columns: repeat(3, 32.5%);
         width: 100%;
     }
+
     div.threeGallery a {
        margin: 0;
     }
@@ -53,8 +63,20 @@
         border-right: 1px solid rgba(0,0,0,0.3);
         padding: .6rem 2rem;
     }
+
     footer div.footerLinks {
         text-align: center;
     }
 
+    .rentals {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .rentals section:nth-child(3) {
+        grid-column: span 2;
+      }
+
+      .rentals img {
+        width: 95%;
+      }
 }
